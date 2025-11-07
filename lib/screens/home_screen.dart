@@ -59,22 +59,28 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   child: Row(
                     children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.swap_vert_outlined),
+                      Expanded(
+                        flex: 1,
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.swap_vert_outlined),
+                        ),
                       ),
                       const SizedBox(
                         width: 20,
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          DropdownMenuLanguageFrom(),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          const DroupDownLangageTo(),
-                        ],
+                      Expanded(
+                        flex: 5,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            DropdownMenuLanguageFrom(),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            const DroupDownLangageTo(),
+                          ],
+                        ),
                       )
                     ],
                   ),

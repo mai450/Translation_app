@@ -34,7 +34,7 @@ class _DroupDownLangageToState extends State<DroupDownLangageTo> {
 
     log("$selectedLanguage");
     return Padding(
-      padding: const EdgeInsets.only(right: 3),
+      padding: const EdgeInsets.only(left: 3),
       child: DropdownButton<String>(
         hint: const Padding(
           padding: EdgeInsets.all(8.0),
